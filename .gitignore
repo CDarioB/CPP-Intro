@@ -2,6 +2,8 @@
 *.d
 
 # Compiled Object files
+*.i
+*.ii
 *.slo
 *.lo
 *.o
@@ -39,3 +41,7 @@
 
 # debug information files
 *.dwo
+
+# directorios
+build/
+libs/
