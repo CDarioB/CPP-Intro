@@ -57,8 +57,9 @@ Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales
 <pre>
 📦 MiProyecto
 📘 .gitignore
+📘 README-ENV-LINUX.md
 📘 README-ENV-WIN.md
-📘 README-MAIN.md
+📘 README.md
 </pre>
 
 </td>
@@ -68,8 +69,9 @@ Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales
 | Archivo / Carpeta | Descripción |
 |----------|------------|
 | 📘 .gitignore | 📖 Archivo git de exclusión para archivos/carpetas no deseadas en el repositorio|
-| 📘 README-ENV-WIN.md | 📖 Documentación de armado de entorno |
-| 📘 README-MAIN.md | 📖 Documentación principal del proyecto |
+| 📘 README-ENV-WIN.md | 📖 Doc. armado de entorno Linux|
+| 📘 README-ENV-WIN.md | 📖 Doc. de armado de entorno Windows|
+| 📘 README.md | 📖 Documentación principal del proyecto |
 
 </td>
 </tr>

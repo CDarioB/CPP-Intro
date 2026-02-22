@@ -49,4 +49,4 @@
 
 **NOTAS:** Tambien se puede instalar direrentes extenciones de git y otras herramientas utiles. Se recomienta realizar una busqueda por internet para mayo información. **Ej.:** **GitLens**, **Git History Diff**.
 <br><br><br>
-[**Volver README-MAIN.md**](README-MAIN.md) .
+[**(←) README.md**](README.md)

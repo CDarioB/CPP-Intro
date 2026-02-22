@@ -1,3 +1,3 @@
 # Pendiente ...
 
-[**Volver README-MAIN.md**](README-MAIN.md) .
+[**(←) README.md**](README.md)
