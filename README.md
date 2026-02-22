@@ -31,7 +31,7 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
    3️⃣ Ensamblado (.s → .o / .obj)
           │ 
           │                    ( .a  / .so )
-   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA ( .a  / .so )
+   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA
           │  ( .o → .exe (para Windows) / .out (para linux) )
           │  
       Ejecutable (Para Windows: .exe, para Linux: a.out)
@@ -128,7 +128,7 @@ Una **biblioteca (library)** es un conjunto de funciones ya compiladas que puede
 
 **No son código fuente** (aunque pueden distribuirse junto a headers), **Son código máquina**.
 
-## 1️⃣ Bibliotecas Estáticas
+## 1️⃣ Bibliotecas Estáticas (**.a**)
 Son archivos que contienen código objeto ya compilado (**codigo de maquina**) y que se incorporan al ejecutable en el momento del enlazado.
 
 **Extensiones:**
@@ -149,7 +149,7 @@ $ g++ main.o -L. -libreria -o app
 * No depende de archivos externos para funcionar.
 * Es más grande.
 
-## 2️⃣ Bibliotecas Dinámicas
+## 2️⃣ Bibliotecas Dinámicas (**.so / .dll**)
 Son bibliotecas que no se integran completamente en el ejecutable, sino que se cargan en tiempo de ejecución.
 
 **Extensiones:**
