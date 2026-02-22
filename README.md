@@ -48,7 +48,7 @@ Cada banch sera un proyecto diferente que tendra la siguiente estructura:
 </tr>
 </table>
 
-Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales:
+Al mismo nivel de la carpeta **MiProyecto** se encuentran los archivos **README.md** y **.gitignore**:
 <table>
 <tr>
 <td valign="top">
@@ -72,6 +72,7 @@ Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales
 | 📘 README-EJ.md | Enunciado del progragama a desarrollar |
 | 📘 README-ENV-WIN.md | Doc. armado de entorno Linux|
 | 📘 README-ENV-WIN.md | Doc. de armado de entorno Windows|
+| 📘 README-TEM.md | Indice de temas a desarrollar |
 | 📘 README.md | Doc. principal del proyecto |
 
 </td>
@@ -84,6 +85,7 @@ Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales
 | 📘 README-EJ.md | Enunciado del progragama a desarrollar |
 | 📘 README-ENV-WIN.md | Se elimina archivo |
 | 📘 README-ENV-WIN.md | Se elimina archivo |
+| 📘 README-TEM.md | Se elimina archivo |
 | 📘 README.md | Marco Teórico |
 
 </td>
@@ -97,7 +99,7 @@ Al mismo nivel se de MiProyecto se encuentran los archivos README.md principales
 C:\CPP-INTRO> cd MiProyecto
 C:\CPP-INTRO\MiProyecto> 
 ```
-2. Dentro del proyecto (**MiProyecto**) ejecuta los siquientes comandos segun necesites:
+2. Dentro del proyecto (**MiProyecto**) ejecuta los siquientes comandos según necesites:
 
 <table>
 <tr>
@@ -105,7 +107,7 @@ C:\CPP-INTRO\MiProyecto>
 
 | Comando | Descripción |
 |----------|------------|
-| ⚡ **make clean** | Borra **build**(📁) |
+| ⚡ **make clean** | **Borra build**(📁) |
 | ⚡ **make** | **Compila** |
 | ⚡ **make run** | **Compila y Ejecuta** |
 
@@ -123,3 +125,6 @@ C:\CPP-INTRO\MiProyecto> make run
 C:\CPP-INTRO\MiProyecto> ./build/MiPrograma
 ```
 NOTA: el nombre **MiPrograma** es el nombre que le dimos al ejecutable dentro del archivo **Makefile**.
+
+## Temas a desarrollar:
+* **Haz clik en** [Índice (→)](README-TEM.md)
