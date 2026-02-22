@@ -4,7 +4,7 @@
 Aprender conceptos basicos de C++
 
 ## Environment:
-Para el armado del entorno de trabajo, se recomienda leer [README-Environment.md](#README-Environment.md) .
+Para el armado del entorno de trabajo, se recomienda leer [README-Environment.md](README-Environment.md) .
 
 ## 📁 Estructura del proyecto:
 Cada banch sera un proyecto diferente que tendra la siguiente estructura:
