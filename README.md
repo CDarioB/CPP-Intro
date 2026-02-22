@@ -83,7 +83,7 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
 </table>
 
 ### ❗❗❗ Importante:
-g++ (al igual que gcc) permite abreviar el proceso de compilación, ya que cada etapa ejecuta implícitamente las etapas anteriores.
+`g++` (al igual que `gcc`) permite abreviar el proceso de compilación, ya que cada etapa ejecuta implícitamente las etapas anteriores.
 
 Por este motivo, es posible invocar directamente una fase determinada sin ejecutar manualmente todas las anteriores.
 ```bash
@@ -93,11 +93,11 @@ $ g++ MiClase.cpp main.cpp -o app
 ```
 En estos casos, el compilador ejecuta internamente las etapas previas necesarias, pero solo deja visible el archivo correspondiente a la etapa final solicitada:
 
-* -S → genera archivos ensamblador (.s)
+* `-S` → genera archivos ensamblador (`.s`
 
-* -c → genera archivos objeto (.o)
+* `-c` → genera archivos objeto (`.o`)
 
-* sin flags → genera el ejecutable final
+* `sin flags` → genera el ejecutable final
 
 Los archivos intermedios generados durante el proceso no se conservan por defecto.
 
