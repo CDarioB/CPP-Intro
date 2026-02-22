@@ -5,8 +5,8 @@ Aprender conceptos basicos de C++
 
 ## Environment:
 Para el armado del entorno de trabajo, se recomienda leer:
-* **Windows:** [README-ENV-WIN.md (→)](README-ENV-WIN.md)
-* **Linux:** [README-ENV-LINUX.md (→)](README-ENV-LINUX.md)  - **PENDIENTE**
+* **Windows:** [**README-ENV-WIN.md (→)**](README-ENV-WIN.md)
+* **Linux:** [**README-ENV-LINUX.md (→)**](README-ENV-LINUX.md)  - **PENDIENTE**
 
 ## 📁 Estructura del proyecto:
 Cada banch sera un proyecto diferente que tendra la siguiente estructura:
@@ -127,11 +127,11 @@ C:\CPP-INTRO\MiProyecto> chcp 65001
 C:\CPP-INTRO\MiProyecto> make clean
 C:\CPP-INTRO\MiProyecto> make run
 ```
-**Otra forma: Ejecuta manual** (una vez compilado el proyecto)
+**Otra forma: Ejecución manual** (una vez compilado el proyecto)
 ```console
 C:\CPP-INTRO\MiProyecto> ./build/MiPrograma
 ```
 NOTA: el nombre **MiPrograma** es el nombre que le dimos al ejecutable dentro del archivo **Makefile**.
 
 ## Temas a desarrollar:
-* **Haz clik en** [Índice (→)](README-TEM.md)
+* **Haz clik en** [**Índice (→)**](README-TEM.md)

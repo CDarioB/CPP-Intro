@@ -1,9 +1,11 @@
 # Armado de entorno de trabajo para (windows):
 
-* Instalar compilador C/C++
-    - Instalar MinGW-x64 on Windows: [MinGW-x64 Download](https://www.msys2.org/)
+[**(←) README.md**](README.md)
 
-    - Instalar C/C++ . A traves de **MinGW-x64** . [Instructivo](https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64-on-windows)
+* Instalar compilador C/C++
+    - Instalar MinGW-x64 on Windows: [**MinGW-x64 Download**](https://www.msys2.org/)
+
+    - Instalar C/C++ . A traves de **MinGW-x64** . [**Instructivo**](https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64-on-windows)
     
         - Instale las opciones: de **gcc** (compilador c), **g++** (compilador C++) y **gdb** (depurador de codigo). (Tambien se puede instalar el **GNU Make**)
 
@@ -45,7 +47,7 @@
 
 * Instalar **Visual Studio Code**
 
-* Instalar  **Microsoft C/C++ extension** en **Visual Studio Code**. [Instructivo y Configuración](https://code.visualstudio.com/docs/languages/cpp) . **En lugar de instalar** <span style="color:blue">**Microsoft C/C++ extension**</span> **pude instalarse** <span style="color:blue">**C/C++ Extension Pack**</span> .
+* Instalar  **Microsoft C/C++ extension** en **Visual Studio Code**. [**Instructivo y Configuración**](https://code.visualstudio.com/docs/languages/cpp) . **En lugar de instalar** <span style="color:blue">**Microsoft C/C++ extension**</span> **pude instalarse** <span style="color:blue">**C/C++ Extension Pack**</span> .
 
 **NOTAS:** Tambien se puede instalar direrentes extenciones de git y otras herramientas utiles. Se recomienta realizar una busqueda por internet para mayo información. **Ej.:** **GitLens**, **Git History Diff**.
 <br><br><br>
