@@ -95,12 +95,18 @@ Al mismo nivel de la carpeta **MiProyecto** se encuentran los archivos **README.
 
 
 ## ⚡ Ejecución con MAKE
-1. Abre una **terminal** en **Visual Code** y entra a tu proyecto (donde se encuentra el archivo **Makefile**):
+1. Abre una **terminal** (**powershell**) en **Visual Code** y entra a tu proyecto (donde se encuentra el archivo **Makefile**):
 ```console
 C:\CPP-INTRO> cd MiProyecto
 C:\CPP-INTRO\MiProyecto> 
 ```
-2. Dentro del proyecto (**MiProyecto**) ejecuta los siquientes comandos según necesites:
+
+2. En la **terminal PowerShell** de **Visual Studio Code**, ejecuta el comando **"chcp 65001"** para cambiar la codificación de caracteres. Esto permitirá que letras especiales, como la **ñ**, se muestren correctamente al ejecutar tu programa.
+```console
+C:\CPP-INTRO\MiProyecto> chcp 65001
+```
+
+3. Dentro del proyecto (**MiProyecto**) ejecuta los siquientes comandos según necesites:
 
 <table>
 <tr>
