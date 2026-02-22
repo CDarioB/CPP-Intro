@@ -30,7 +30,7 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
    3️⃣ Ensamblado (.s → .o / .obj)
           │ 
           │
-   4️⃣ Enlazado (Linking)  <────  BIBLIOTECA
+   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA
           │  ( .o → .exe (para Windows) / .out (para linux) )
           │
       Ejecutable (Para Windows: .exe, para Linux: a.out)
@@ -102,7 +102,7 @@ En estos casos, el compilador ejecuta internamente las etapas previas necesarias
 Los archivos intermedios generados durante el proceso no se conservan por defecto.
 
 #### 🔍 Visualización de archivos intermedios
-Si se desea conservar y examinar los archivos intermedios (preprocesado, ensamblador y objeto), se recomienda utilizar la opción `--save-temps`, que instruye al compilador a no eliminar dichos archivos:
+Si se desea **conservar y examinar los archivos intermedios** (preprocesado, ensamblador y objeto), se recomienda utilizar la opción `--save-temps`, que instruye al compilador a no eliminar dichos archivos:
 ```bash
 $ g++ -S --save-temps  main.cpp MiClase.cpp
 $ g++ -c --save-temps main.cpp MiClase.cpp
