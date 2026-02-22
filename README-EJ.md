@@ -88,7 +88,7 @@ Ejecución manual del programa:
 $ ./programa
 ```
 
-### 5️⃣ - Ejercicios sobre abreviación del proceso de compilación
+### 6️⃣ - Ejercicios sobre abreviación del proceso de compilación
 1. Vuelva a la estructura del ejercicio 1️⃣, es decir borra todos los archivos generados por la compilación de **g++**. (Solo quedate con los archivos **.cpp** y **.h**).
 
 2. Ejecute comando `g++ -S main.cpp MiClase.cpp`
