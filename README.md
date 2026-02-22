@@ -30,8 +30,8 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
           │
    3️⃣ Ensamblado (.s → .o / .obj)
           │ 
-          │           ( estático:.a  / dinámica: .so )
-   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA ( estático:.a  / dinámica: .so )
+          │                    ( .a  / .so )
+   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA ( .a  / .so )
           │  ( .o → .exe (para Windows) / .out (para linux) )
           │  
       Ejecutable (Para Windows: .exe, para Linux: a.out)
