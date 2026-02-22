@@ -60,7 +60,7 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
 </tr>
 </table>
 
-**4️⃣ Enlazado (Linking)**
+**4️⃣ Enlazado (Linker)**
 - **Descripción:** Combina todos los objetos y bibliotecas en un único ejecutable que puede correr en la computadora. (Archivo final listo para correr en la CPU - Contiene código máquina completo)
 - **Entrada:** `main.o` (código objeto) + Bibliotecas
 - **Salida:** `main` (archivo ejecutable, código máquina listo)
