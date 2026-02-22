@@ -11,6 +11,7 @@ Instrucciones de alto nivel escritas por el programador.
 
 # 📜 Código Objeto (.o, .obj)
 Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
+(binario, contiene código máquina + metadata)
 
 # 🛠️⚙️ Etapas del Compilador
  <table>
@@ -29,10 +30,10 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
           │
    3️⃣ Ensamblado (.s → .o / .obj)
           │ 
-          │
-   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA
+          │           ( estático:.a  / dinámica: .so )
+   4️⃣ Enlazado (Linker)  <────  BIBLIOTECA ( estático:.a  / dinámica: .so )
           │  ( .o → .exe (para Windows) / .out (para linux) )
-          │
+          │  
       Ejecutable (Para Windows: .exe, para Linux: a.out)
 </pre>
 
@@ -119,6 +120,67 @@ Esto permitirá observar explícitamente los archivos generados en cada etapa, c
 <br><br>
 
 ## 🏃🥇  [**Ejercicios (👉)**](README-EJ.md)
+
+<br><br>
+
+# 📚 Bibliotecas
+Una **biblioteca (library)** es un conjunto de funciones ya compiladas que pueden reutilizarse en distintos programas sin reescribir el código.
+
+**No son código fuente** (aunque pueden distribuirse junto a headers), **Son código máquina**.
+
+## 1️⃣ Bibliotecas Estáticas
+Son archivos que contienen código objeto ya compilado (**codigo de maquina**) y que se incorporan al ejecutable en el momento del enlazado.
+
+**Extensiones:**
+* Linux → `.a`
+* Windows (MinGW) → `.a`
+* Windows (MSVC) →  `.lib`
+
+### ⚙ Cómo funcionan
+Durante el linkeo, el enlazador copia dentro del ejecutable las funciones necesarias desde la biblioteca. **Ejemplo:**
+```bash
+$ g++ main.o -L. -libreria -o app
+```
+
+**Si libreria.a es estática, su código se integra dentro de app.**
+
+### 🎯 Resultado
+* El ejecutable contiene todo el código.
+* No depende de archivos externos para funcionar.
+* Es más grande.
+
+## 2️⃣ Bibliotecas Dinámicas
+Son bibliotecas que no se integran completamente en el ejecutable, sino que se cargan en tiempo de ejecución.
+
+**Extensiones:**
+* Linux → `.so`
+* Windows → `.dll`
+* macOS → `.dylib`
+
+### ⚙ Cómo funcionan
+En el enlazado solo se guarda una referencia a la biblioteca.
+
+Al ejecutar el programa:
+```bash
+$ ./app
+```
+**El sistema operativo carga la biblioteca dinámica en memoria.**
+
+### 🎯 Resultado
+* Ejecutable más pequeño.
+* Puede compartirse la biblioteca entre varios programas.
+* Requiere que la biblioteca esté instalada en el sistema.
+
+## 📌 Resumen
+* **Bibliotecas = código ya compilado reutilizable**. 
+* 👉 **Pertenecen a la etapa de ENLAZADO (Linking)**.
+  - **Biblioteca Estáticas** → se copian dentro del ejecutable.
+  - **Biblioteca Dinámicas** → se cargan en tiempo de ejecución.
+* **Son código máquina**, no código fuente.
+  - Código objeto / código máquina compilado
+  - Contienen símbolos y secciones binarias
+  - Una `.a` es un archivo contenedor de múltiples `.o`.
+  - Una `.so` es un binario enlazable dinámicamente.
 
 <br><br>
 
