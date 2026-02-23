@@ -78,10 +78,17 @@ Paso intermedio en lenguaje máquina, pero sin enlazar las bibliotecas.
 | `g++ -E main.cpp -o main.i` | Preprocesamiento **sin** compilación |
 | `g++ -S main.i -o main.s` | Preprocesacmiento y Compilación **sin** Enlazado|
 | `g++ -c main.s -o main.o` | Preprocesacmiento, Compilación, Ensamblado **sin** Enlazado |
-| `g++ main.o -o main` | Preprocesacmiento, Compilación, Ensamblado y Enlazado ... aqui tambien de enlazan las Bibliotecas. |
+| `g++ main.o -o main` | Preprocesacmiento, Compilación, Ensamblado y Enlazado (**Aquí también de enlazan las Bibliotecas**) |
 </td>
 </tr>
 </table>
+
+📌**Otras opciones más comunes:**
+* `-ansi`: en C es equivalente a `-std=c90`.
+* `-Wall`: habilita todos las advertencias (warnings).
+* `-Werror`: convierte las advertencias en errores.
+* `-pedantic`: genera advertencias si se utiliza alguna extensión de GNU.
+* `-std`: puede ser `-std=c90`, `-std=c99`, etc.
 
 ### ❗❗❗ Importante:
 `g++` (al igual que `gcc`) permite abreviar el proceso de compilación, ya que cada etapa ejecuta implícitamente las etapas anteriores.
@@ -139,10 +146,19 @@ Son archivos que contienen código objeto ya compilado (**codigo de maquina**) y
 ### ⚙ Cómo funcionan
 Durante el linkeo, el enlazador copia dentro del ejecutable las funciones necesarias desde la biblioteca. **Ejemplo:**
 ```bash
-$ g++ main.o -L. -libreria -o app
+$ g++ -static -Wall calc.cpp /usr/lib/x86_64-linux-gnu/libm.a -o calc_static
 ```
 
-**Si libreria.a es estática, su código se integra dentro de app.**
+**Si libm.a es estática, su código se integra dentro de app.**
+
+**Explicación:**
+* `-static` → fuerza enlazado estático
+* `-Wall` → activa advertencias
+* `calc.c` → archivo fuente
+* `-L` → directorio donde buscar bibliotecas
+* `-lm` → enlaza contra `libm.a`
+* `-o calc_static` → nombre del ejecutable
+
 
 ### 🎯 Resultado
 * El ejecutable contiene todo el código.
@@ -165,6 +181,34 @@ Al ejecutar el programa:
 $ ./app
 ```
 **El sistema operativo carga la biblioteca dinámica en memoria.**
+
+**Comando para enlazar una librería dinámica:**
+```bash
+$ g++ -Wall calc.cpp -lm -o calc_dynamic
+```
+**Explicación:**
+* `-Wall` → activa advertencias
+* `calc.cpp` → archivo fuente C++
+* `-lm` → enlaza la biblioteca matemática (libm)
+* `-o calc_dynamic` → nombre del ejecutable
+
+**📌 NOTA: 📌** 
+Comando `ldd` muestra las bibliotecas dinámicas (`.so`) de las que depende un ejecutable.
+```bash
+$ ldd nombre_del_ejecutable
+$ ldd calc_dynamic
+linux-vdso.so.1 (0x00007ffd5d5d0000)
+libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007f2c...)
+libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f2c...)
+libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007f2c...)
+/lib64/ld-linux-x86-64.so.2 (0x00007f2c...)
+```
+* `ldd` →  Muestra qué bibliotecas dinámicas se cargarán en **tiempo de ejecución**.
+* No muestra bibliotecas estáticas. **Solo aplica a binarios enlazados dinámicamente**.
+* Indica la **ruta real donde se encuentran**.
+* Sirve para depurar errores tipo: `library not found`. (Si aparece not found, la biblioteca falta en el sistema). 
+
+
 
 ### 🎯 Resultado
 * Ejecutable más pequeño.
