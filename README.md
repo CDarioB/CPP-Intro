@@ -19,7 +19,7 @@ Cada banch sera un proyecto diferente que tendra la siguiente estructura:
 ├── 📁 build
 ├── 📁 include
 │   └── 📄 MiClase.h
-│── 📁 libs
+├── 📁 libs
 ├── 📁 src
 │   ├── 📄 MiClase.cpp
 │   └── 📄 main.cpp
@@ -133,5 +133,5 @@ C:\CPP-INTRO\MiProyecto> ./build/MiPrograma
 ```
 NOTA: el nombre **MiPrograma** es el nombre que le dimos al ejecutable dentro del archivo **Makefile**.
 
-## Temas a desarrollar:
+## 📑 Temas a desarrollar:
 * **Haz clik en** [**Índice (→)**](README-TEM.md)
