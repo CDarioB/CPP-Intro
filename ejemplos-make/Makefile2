@@ -1,0 +1,4 @@
+CC = gcc
+CFLAGS = -Wall
+
+hola: main.o hola.o

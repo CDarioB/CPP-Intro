@@ -1,0 +1,14 @@
+CC = gcc
+CFLAGS = -Wall
+
+hola: main.o hola.o
+	$(CC) -o hola main.o hola.o
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c
+
+hola.o: hola.c
+	$(CC) $(CFLAGS) -c hola.c
+
+clean: 
+	rm -f hola hola.o main.o
