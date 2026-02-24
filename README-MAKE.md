@@ -10,9 +10,7 @@
 -   Genera el ejecutable final en una carpeta separada
 -   Permite limpiar el proyecto fácilmente
 -   Permite compilar y ejecutar con un solo comando
-
 <br><br>
-
 
 # 📁 Estructura del Proyecto
 
@@ -21,7 +19,7 @@
     ├── src/            # Archivos .cpp
     ├── build/          # Archivos generados (.o y ejecutable)
     └── Makefile
-<br><br>
+<br>
 
 # ⚙️ Configuración del Makefile
 
@@ -64,7 +62,7 @@
 No es necesario modificar el Makefile al agregar nuevos archivos `.cpp`.
 <br>
 
-# 🏗 Reglas del Makefile
+# 📋 Reglas del Makefile
 
 ## ✨ Regla principal
 
@@ -147,7 +145,7 @@ Primero compila si es necesario y luego ejecuta el programa.
 Declara que estos targets no representan archivos reales, sino acciones.
 
 Evita conflictos si existiera un archivo llamado `clean`, `all` o `run`.
-<br><br>
+<br>
 
 # ⚙ Cómo funciona internamente
 
@@ -158,7 +156,7 @@ Evita conflictos si existiera un archivo llamado `clean`, `all` o `run`.
 -   Ejecuta los comandos necesarios para actualizar el ejecutable.
 
 Esto permite compilaciones incrementales eficientes.
-<br><br>
+<br>
 
 # ⚡ Comandos disponibles
 
@@ -168,7 +166,7 @@ Esto permite compilaciones incrementales eficientes.
 | `make clean`  | Borra la carpeta `build/` |
 | `make run`    | Compila (si es necesario) y ejecuta |
 
-<br><br>
+<br>
 
 [**Marco Teorico (👈)**](README.md)
 <br>
