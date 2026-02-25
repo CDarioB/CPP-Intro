@@ -46,3 +46,4 @@
 # directorios
 build/
 libs/
+.vscode/
