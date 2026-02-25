@@ -1,3 +1,0 @@
-# Pendiente ...
-
-[**(←) README.md**](README.md)

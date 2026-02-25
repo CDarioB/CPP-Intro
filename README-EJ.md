@@ -1,1 +1,10 @@
-# Aquí ira el enunciado del progragama a desarrollar
+[**Marco Teorico (👈)**](README.md)
+
+ # 🏃🥇 Ejercicios
+
+## **En construcción** 
+
+### **La carpeta string-intro tiene ejemplos para ver**
+
+
+ [**Marco Teorico (👈)**](README.md)
