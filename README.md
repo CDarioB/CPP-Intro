@@ -121,10 +121,13 @@ A continuación se muestra el código fuente del programa para evaluar la clase 
     }
 ```
 
-**Nota:** recordar que para compilar ambos archivos fuentes se debe utilizar:
+**Nota:** recordar que para compilar ambos archivos fuentes se debe utilizar g++ (dentro de la carpeta donde se encuentran los cpp), o bien puedes empezar a usar make (make clean; make ; maqke run)
 
 ```bash
-> g++ hora1.cpp ejr05.cpp
+EJ_5/src $> g++ hora1.cpp ejr05.cpp
+ó
+EJ_5 $> make clean
+EJ_5 $> make run
 ```
 
 [**Código Ej.5 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_5)
