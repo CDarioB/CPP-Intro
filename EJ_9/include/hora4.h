@@ -6,7 +6,7 @@ class Hora
   public:
     Hora(); // Constructor
 
-    // 🔹 Ahora retornan Hora&
+    // Ahora retornan Hora&
     Hora &establecer(int, int, int);
     Hora &establecerHora(int);
     Hora &establecerMinuto(int);
