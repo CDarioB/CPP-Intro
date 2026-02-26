@@ -156,3 +156,6 @@ int obtenerSegundo();
 ```
 
 [**Código Ej.7 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_7)
+
+8. Agregar el calificador const a las funciones miembros de la clase Hora del ejercicio anterior según corresponda.
+[**Código Ej.8 = Ej.7 con "const" (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_7)

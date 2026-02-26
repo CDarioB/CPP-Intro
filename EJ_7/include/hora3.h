@@ -9,10 +9,10 @@ public:
   void establecerHora(int);    // Para fijar solo el campo 'hora'
   void establecerMinuto(int);  // Para fijar solo el campo 'minuto'
   void establecerSegundo(int); // Para fijar solo el campo 'segundo'
-  int obtenerHora();
-  int obtenerMinuto();
-  int obtenerSegundo();
-  void imprimir(); // Formato: 13:15:00
+  int obtenerHora() const;
+  int obtenerMinuto() const;
+  int obtenerSegundo() const;
+  void imprimir() const; // Formato: 13:15:00
 
 private:
   int hora;    // 0 - 23

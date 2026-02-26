@@ -39,22 +39,22 @@ void Hora::establecerSegundo(int s) // Para fijar solo el campo 'segundo'
     segundo = s;
 }
 
-int  Hora::obtenerHora()
+int  Hora::obtenerHora() const
 {
     return hora;
 }
 
-int  Hora::obtenerMinuto()
+int  Hora::obtenerMinuto() const
 {
     return minuto;
 }
 
-int  Hora::obtenerSegundo()
+int  Hora::obtenerSegundo() const
 {
     return segundo;
 }
 
-void Hora::imprimir() // Formato: 13:15:00
+void Hora::imprimir() const // Formato: 13:15:00
 {
     if (hora < 10)
         cout << "0" << hora << ':';
