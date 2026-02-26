@@ -1,6 +1,6 @@
 #include <iostream>
 // #include <cmath>
-#include "..\\include\\complejo1.h"
+#include "..\\include\\complejo.h"
 /*
  * using std::cout;
  * using std::endl;
@@ -18,44 +18,25 @@ Complejo::Complejo(double r, double i)
     parteImg = i;
 }
 
-void Complejo::establecerParteReal(double r) // Para fijar solo el campo 'hora'
+void Complejo::setParteReal(double r) // Para fijar solo el campo 'hora'
 {
     parteReal = r;
 }  
 
-void Complejo::establecerParteImaginaria(double i) // Para fijar solo el campo 'minuto'
+void Complejo::setParteImaginaria(double i) // Para fijar solo el campo 'minuto'
 {
     parteImg = i;
 }
 
 
-double Complejo::obtenerParteReal() const
+double Complejo::getParteReal() const
 {
     return parteReal; 
 }
 
-double Complejo::obtenerParteImaginaria() const
+double Complejo::getParteImaginaria() const
 {
     return parteImg;
-}
-
-// Suma
-Complejo Complejo::sumar(const Complejo& otro) const
-{
-    return Complejo(
-        parteReal + otro.obtenerParteReal(),
-        parteImg + otro.obtenerParteImaginaria()
-    );
-}
-
-
-// Resta
-Complejo Complejo::restar(const Complejo& otro) const
-{
-    return Complejo(
-        parteReal - otro.obtenerParteReal(),
-        parteImg - otro.obtenerParteImaginaria()
-    );
 }
 
 // Imprimir
