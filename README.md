@@ -184,3 +184,7 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
     1. liberar la memoria reservada.
 
 [**Código Ej.14 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_14)
+
+15. Modificar la clase Complejo del ejercicio 10 para que las operaciones aritméticas se realicen mediante **sobrecarga de operadores**. **Sobrecargar los operadores +, -, += y -=** (nombres de archivos complejo.h y complejo.cpp).
+
+[**Código Ej.15 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_15)
