@@ -6,12 +6,18 @@ using std::endl;
 int main()
 {
     // Reservar memoria para un entero
-    int* pEntero = new int;
-    *pEntero = 10;
+    int *ptrEntero = new int(10);
+    /*
+     - int* ptrEntero = new int;
+     - *ptrEntero = 10;
+    */
 
     // Reservar memoria para un float
-    float* pFlotante = new float;
-    *pFlotante = 3.14f;
+    float *ptrFloat = new float(3.14);
+    /*
+     - float *ptrFloat = new float;
+     - *ptrFloat = 3.14f;
+    */
 
     // Reservar memoria para un arreglo dinámico (inicializaciòn en cero)
     int tam = 5;
@@ -23,8 +29,8 @@ int main()
     int* arreglo_3 = new int[]{5, 4, 3, 2, 1, 0};
 
     // Imprimir valores
-    cout << "\nEntero: " << *pEntero << endl;
-    cout << "\nFlotante: " << *pFlotante << endl;
+    cout << "\nEntero: " << *ptrEntero << endl;
+    cout << "\nFlotante: " << *ptrFloat << endl;
 
     cout << "\nArreglo_1:  int* arreglo_1 = new int[5]();" << endl;
     for (int i = 0; i < tam; i++)
@@ -48,8 +54,8 @@ int main()
     cout << endl;
 
     // Liberar memoria
-    delete pEntero;
-    delete pFlotante;
+    delete ptrEntero;
+    delete ptrFloat;
     delete[] arreglo_1;
     delete[] arreglo_2;
     delete[] arreglo_3;
