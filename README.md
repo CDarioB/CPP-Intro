@@ -170,8 +170,8 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
 
 [**Código Ej.9 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_9)
 
-10. Escribir una clase `Complejo` (nombres de archivos `complejo1.h` y `complejo1.cpp`) que permita realizar aritmética básica con números complejos, junto a un programa que verifique el correcto funcionamiento.**Nota:** los números complejos son de la forma $a + ib$, donde $i=\sqrt{-1}$.
-    1.  Utilizar variables `double` para los datos miembros (`private`) de la clase.
+10. Escribir una clase `Complejo` (nombres de archivos `complejo1.h` y `complejo1.cpp`) que permita realizar aritmética básica con números complejos, junto a un programa que verifique el correcto funcionamiento. <br> **Nota:** los números complejos son de la forma $a + ib$, donde $i=\sqrt{-1}$.
+    1. Utilizar variables `double` para los datos miembros (`private`) de la clase.
     1. Codificar un constructor que permita inicializar un objeto de la clase, el cual debe tener valores predeterminados si no se proporcionan argumentos.
     1. Codifique funciones miembro `public` para:
         1. Sumar dos números complejos.
