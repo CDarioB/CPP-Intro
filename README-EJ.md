@@ -1,1 +1,0 @@
-# Aquí ira el enunciado del progragama a desarrollar
