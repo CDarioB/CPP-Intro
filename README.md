@@ -162,6 +162,7 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
         1. Imprimir un número complejo de la forma (`parteReal, parteImaginaria`). 
         <br>
         P.e.: el complejo $2+3i$ se imprime `(2, 3)`.
+        
 [**Código Ej.10 - complejo1.cpp (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_10)
 
 11. Escribir un programa que, utilizando la clase Complejo del ejercicio anterior, defina e inicialice dos números complejos, los sume y reste, y muestre los resultados.
