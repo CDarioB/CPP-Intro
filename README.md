@@ -16,34 +16,25 @@ HOLA MUNDO
 
 
 3. Escribir un programa que realice una división entera utilizando una función con paso de parámetros por referencia:
-    <ol type="A">
-        <li>
-            El programa debe solicitarle al usuario el valor del dividendo y del divisor.
-        </li>
-        <li>
-            Si el divisor es 0 debe mostrar un mensaje de error y salir.
-        </li>
-        <li>
-            La división la debe realizar una función cuyo prototipo sea:.
-        </li>
-    </ol>
-    
-        ```cpp
-        int divisionEntera(int &a, int &b, int &res);
-        ```
-        la cual devuelve -1 si el divisor es 0, o 0 en caso contrario. La interacción del programa con el usuario debe ser la que se muestra a continuación:
-        
-        ```bash
-        > ./a.out
-        Ingrese el dividendo (entero): 10 
-        Ingrese el divisor (entero): 2
-        10 / 2 = 5
-        > ./a.out
-        Ingrese el dividendo (entero): 10 
-        Ingrese el divisor (entero): 0
-        ERROR: división por cero
-        ```
-    **Nota:** en este caso la función no devuelve el valor de la operación sino que el valor de retorno se utiliza para indicar si la operación se realizó con éxito o no.
+    1. El programa debe solicitarle al usuario el valor del dividendo y del divisor.
+    1. Si el divisor es 0 debe mostrar un mensaje de error y salir.
+    1. La división la debe realizar una función cuyo prototipo sea:
+```cpp
+int divisionEntera(int &a, int &b, int &res);
+```
+La cual devuelve -1 si el divisor es 0, o 0 en caso contrario. La interacción del programa con el usuario debe ser la que se muestra a continuación:
+```bash
+> ./a.out
+Ingrese el dividendo (entero): 10 
+Ingrese el divisor (entero): 2
+10 / 2 = 5
+
+> ./a.out
+Ingrese el dividendo (entero): 10 
+Ingrese el divisor (entero): 0
+ERROR: división por cero
+```
+**Nota:** en este caso la función no devuelve el valor de la operación sino que el valor de retorno se utiliza para indicar si la operación se realizó con éxito o no.
 
 [**Código Ej.3 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_3)
     
@@ -81,44 +72,36 @@ class Hora {
 #endif
 ```
 El comportamiento de la clase es el siguiente:
-    <ol type="A">
-        <li>
-            El constructor debe inicializar los datos miembros de la clase a cero.
-        </li>
-        <li>
-            La función miembro `establecer()` permite fijar el valor de la hora ($h$, $m$ y $s$) luego de verificar que los valores pasados como argumentos sean correctos ($0 \leq h < 24$; y $0 \leq m,s < 59$).
-        </li>
-        <li>
-           La función miembro `imprimir()` debe imprimir la hora en el formato de 24hs (p.e.: 01:10:22 o  23:59:59).
-        </li>
-    </ol>
+*  **A.** El constructor debe inicializar los datos miembros de la clase a cero.
+* **B.** La función miembro `establecer()` permite fijar el valor de la hora ($h$, $m$ y $s$) luego de verificar que los valores pasados como argumentos sean correctos ($0 \leq h < 24$; y $0 \leq m,s < 59$).
+* **C.**La función miembro `imprimir()` debe imprimir la hora en el formato de 24hs (p.e.: 01:10:22 o  23:59:59).
 
 A continuación se muestra el código fuente del programa para evaluar la clase `Hora` implementada:
 ```cpp
-    #include <iostream>
-    #include "hora1.h"
+#include <iostream>
+#include "hora1.h"
     
-    using namespace std;
+using namespace std;
     
-    int main()
-    {
-      Hora h;     // Instancia el objeto h de la clase Hora
+int main()
+{
+    Hora h;     // Instancia el objeto h de la clase Hora
     
-      cout << "La hora por defecto es: ";
-      h.imprimir();
+    cout << "La hora por defecto es: ";
+    h.imprimir();
         
-      h.establecer(13, 27, 6);
-      cout << "\nLa hora después de estableceres: ";
-      h.imprimir();
+    h.establecer(13, 27, 6);
+    cout << "\nLa hora después de estableceres: ";
+    h.imprimir();
     
-      // Intenta establecer un valor inválido de Hora
-      h.establecer(99, 99, 99);    
-      cout << "\nDespués de intentar establecer un valor inválido: ";
-      h.imprimir();
-      cout << endl;
+    // Intenta establecer un valor inválido de Hora
+    h.establecer(99, 99, 99);    
+    cout << "\nDespués de intentar establecer un valor inválido: ";
+    h.imprimir();
+    cout << endl;
 
-      return 0;
-    }
+    return 0;
+}
 ```
 
 **Nota:** recordar que para compilar ambos archivos fuentes se debe utilizar g++ (dentro de la carpeta donde se encuentran los cpp), o bien puedes empezar a usar make (make clean; make ; maqke run)
