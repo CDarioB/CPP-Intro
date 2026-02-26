@@ -28,7 +28,7 @@ int main(void)
     // Ingreso en una sola línea
     cin >> iNum >> fNum >> dNum;
 
-    cout << "Int: " << iNum << ", Float: " << fNum << ", Double: " << d5Num << endl;
+    cout << "Int: " << iNum << ", Float: " << fNum << ", Double: " << dNum << endl;
     
     return 0;
 }
