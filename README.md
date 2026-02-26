@@ -131,3 +131,28 @@ EJ_5 $> make run
 ```
 
 [**Código Ej.5 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_5)
+
+6. Modificar la implementación de la clase Hora del ejercicio anterior de forma tal que internamente la hora este almacenada como la cantidad de segundos desde la medianoche. La interfaz de la clase debe ser la misma. Para ello:
+    <ol type="A">
+        <li>
+            Codificar los archivos hora2.h y hora2.cpp con la nueva implementación.
+        </li>
+        <li>
+            Probar la clase utilizando el mismo código fuente de prueba que el ejercicio anterior.
+        </li>
+    </ol>
+
+[**Código Ej.6 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_6)
+
+
+7. Modificar la implementación de la clase Hora del 5 (guardar como hora3.h y hora3.cpp) donde se incluyan también funciones miembros set y get. Los prototipos de las funciones se muestran a continuación:
+```cpp
+void establecerHora(int );  // Para fijar solo el campo 'hora'
+void establecerMinuto(int ); // Para fijar solo el campo 'minuto'
+void establecerSegundo(int ); // Para fijar solo el campo 'segundo'
+int obtenerHora();
+int obtenerMinuto();
+int obtenerSegundo();
+```
+
+[**Código Ej.7 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_7)
