@@ -158,4 +158,14 @@ int obtenerSegundo();
 [**Código Ej.7 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_7)
 
 8. Agregar el calificador const a las funciones miembros de la clase Hora del ejercicio anterior según corresponda.
+
 [**Código Ej.8 = Ej.7 con "const" (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_7)
+
+9. Modificar la clase Hora del ejercicio anterior para que las funciones miembros puedan ser llamadas en cascada como se muestra en el Listado~\ref{lst:cascada} (utilizar el puntero this).
+```cpp
+Hora h;
+h.establecer(17,30,0).imprimir();
+h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
+```
+
+[**Código Ej.9 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_9)
