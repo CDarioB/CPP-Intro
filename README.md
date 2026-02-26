@@ -176,3 +176,11 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
 13. Modificar el programa del ejercicio 11 para que las **operaciones de suma y resta** de los números complejos **sean realizadas por sendas funciones definidas en la propia aplicación**. Estas funciones deben ser funciones **al estilo de C, o sea, funciones no miembros de la clase**. En su implementación, estas funciones deben utilizar las funciones miembros get de la clase para obtener el valor de complejo.
 
 [**Código Ej.13 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_13)
+
+14. Escribir un programa que asigne y libere memoria dinámica utilizando los operadores `new` y `delete` de C++. El programa debe:
+    1. reservar memoria para almacenar un valor entero y uno en punto flotante, y asignarle valores,
+    1. reservar memoria para un arreglo unidimensional de enteros e inicializarlos a cero,
+    1. imprimir cada una de las variables antes generadas y
+    1. liberar la memoria reservada.
+
+[**Código Ej.14 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_14)
