@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+// #include <cmath>
 #include "..\\include\\complejo1.h"
 /*
  * using std::cout;
@@ -64,9 +64,10 @@ void Complejo::imprimir() const
     cout <<  "("   <<  parteReal
          <<  ", "  <<  parteImg
          <<  ")"   <<  " -> "  <<  parteReal;
-    
+    /*
     if (parteImg < 0)
-        cout << " - " << abs(parteImg) << 'i' << endl;
+        cout << " - " << abs(parteImg) << 'i';
     else
-        cout << " + " << parteImg << 'i' << endl;
+        cout << " + " << parteImg << 'i';
+    */
 }

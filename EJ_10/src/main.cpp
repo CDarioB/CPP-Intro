@@ -21,13 +21,16 @@ int main()
 
   cout << "Segundo complejo: ";
   c2.imprimir();
+  cout << endl;
 
   cout << "\nSuma: ";
   suma.imprimir();
+  cout << endl;
 
   cout << "\nResta: ";
   resta.imprimir();
-
+  cout << endl;
+  
   cout << "\n";
   return 0;
 }
