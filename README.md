@@ -168,3 +168,11 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
 11. Escribir un programa que, utilizando la clase Complejo del ejercicio anterior, defina e inicialice dos números complejos, los sume y reste, y muestre los resultados.
 
 [**Código Ej.11 - main.cpp (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_10)
+
+12. Agregarle a la implementación de la clase Complejo del ejercicio 10 funciones get para obtener la parte real y la parte imaginaria.
+
+[**Código Ej.12 - Ej.10 con metodos set/get clase complejo (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_10)
+
+13. Modificar el programa del ejercicio 11 para que las **operaciones de suma y resta** de los números complejos **sean realizadas por sendas funciones definidas en la propia aplicación**. Estas funciones deben ser funciones **al estilo de C, o sea, funciones no miembros de la clase**. En su implementación, estas funciones deben utilizar las funciones miembros get de la clase para obtener el valor de complejo.
+
+[**Código Ej.13 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_13)
