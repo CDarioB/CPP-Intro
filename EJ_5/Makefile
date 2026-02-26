@@ -3,7 +3,7 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude
 SRC_DIR = src
 BUILD_DIR = build
-TARGET = $(BUILD_DIR)/MiPrograma
+TARGET = $(BUILD_DIR)/ej5
 
 # ===== ARCHIVOS =====
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
