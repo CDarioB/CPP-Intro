@@ -11,7 +11,7 @@
 
 using namespace std;
 
-// Hora::Hora() : hora(0), minuto(0), segundo(0) {}
+// Constructor
 Complejo::Complejo(double r, double i)
 {
     parteReal = r;
@@ -43,14 +43,14 @@ double Complejo::getImaginario() const
 Complejo Complejo::operator+(const Complejo& otro) const
 {
     return Complejo(parteReal + otro.parteReal,
-                     parteImg + otro.parteImg);
+                    parteImg + otro.parteImg);
 }
 
 // Operador -
 Complejo Complejo::operator-(const Complejo& otro) const
 {
     return Complejo(parteReal - otro.parteReal,
-                     parteImg - otro.parteImg);
+                    parteImg - otro.parteImg);
 }
 
 // Operador +=
