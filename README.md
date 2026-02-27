@@ -187,4 +187,113 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
 
 15. Modificar la clase Complejo del ejercicio 10 para que las operaciones aritméticas se realicen mediante **sobrecarga de operadores**. **Sobrecargar los operadores +, -, += y -=** (nombres de archivos complejo.h y complejo.cpp).
 
-[**Código Ej.15 (→)**](https://github.com/CDarioB/CPP-Intro/tree/CPP-EJERCICIOS/EJ_15)
+[**Código Ej.15 (→)**](EJ_15/)
+
+<br><br><br>
+
+16. Modificar la clase Complejo del ejercicio 15 para sobrecargar los operadores de inserción y extracción de flujo (<< y >>). Para el ingreso de un número complejo por le entrada estándar se deben ingresar la parte real e imaginaria separada por un espacio (nombres de archivos complejo4.h y complejo4.cpp). A continuación se muestra el código fuente del programa para evaluar la clase implementada.
+```cpp
+#include <iostream>
+#include "complejo4.h"
+using namespace std;
+
+int main()
+{
+  cout << "Ingrese un nro complejo (c1): ";
+  Complejo c1;
+  cin >> c1;
+
+  cout << "Ingrese un nro complejo (c2): ";
+  Complejo c2;
+  cin >> c2;
+  cout << endl;
+
+  cout << "Luego de 'resul = c1 + c2'" << endl;
+  Complejo resul;
+  resul = c1 + c2;
+  cout << "c1 = " << c1 << endl << "c2 = " << c2 << endl
+    << "resul = " << resul << endl << endl;
+
+  cout << "Luego de 'resul = c1 - c2'" << endl;
+  resul = c1 - c2;
+  cout << "c1 = " << c1 << endl << "c2 = " << c2 << endl
+    << "resul = " << resul << endl << endl;
+
+  cout << "Luego de 'c2 += c1'" << endl;
+  c2 += c1;
+  cout << "c1 = " << c1 << endl << "c2 = " << c2 << endl
+    << "resul = " << resul << endl << endl;
+
+  return 0;
+}
+```
+
+
+<br><br><br>
+
+17. Agregarle a la clase Complejo del ejercicio 16 los operadores de igualdad == y desigualdad !=, y el constructor de copia (nombres de archivos complejo5.h y complejo5.cpp).
+
+<br><br><br>
+
+18. A partir de la declaración de la clase Cadena en el archivo cadena.h y del programa mostrados a continuación, codificar el archivo cadena.cpp donde se implementen las funciones miembros de la clase. Utilizar asignación dinámica de memoria (con new y delete) para reservar espacio para almacenar la cadena.
+```cpp
+#ifndef CADENA_H
+#define CADENA_H
+
+class Cadena {
+  public:
+    Cadena(int = 20); // Constructor
+    ~Cadena();        // Destructor
+
+    void establecer(const char * );
+    void imprimir() const;
+
+  private:
+    const int longitud;
+    char *cad;
+};
+#endif
+```
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include "cadena.h"
+
+int main() {
+  Cadena cad1;
+  cad1.establecer("Hola");
+  cad1.imprimir();
+
+  Cadena cad2(27);
+  cad2.establecer(
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  cad2.imprimir();
+
+  return 0;
+}
+```
+
+19. Escribir una clase Cadena (nombre de archivos cadena2.h y cadena2.cpp) similar a la del ejercicio anterior en la cual la asignación y la impresión por pantalla de la cadena se realice mediante sobrecarga de operadores. A continuación se muestra el código fuente para evaluar la implementación de la clase.
+```cpp
+#include <iostream>
+#include "cadena2.h"
+
+using namespace std;
+
+int main()
+{
+  Cadena cad1;
+  cad1 << "Prueba1";
+  cout << cad1 << endl;
+
+  Cadena cad2(8);
+  cad2 << "Prueba2";
+  cout << cad2 << endl;
+
+  cad2 << "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  cout << cad2 << endl;
+
+  return 0;
+}
+```
