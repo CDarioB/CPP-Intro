@@ -144,7 +144,7 @@ int obtenerSegundo();
 
 [**Código Ej.8 = Ej.7 con "const" (→)**](EJ_7/)
 
-9. Modificar la clase Hora del ejercicio anterior para que las funciones miembros puedan ser llamadas en cascada como se muestra en el Listado~\ref{lst:cascada} (utilizar el puntero this).
+9. Modificar la clase Hora del ejercicio anterior para que las funciones miembros puedan ser llamadas en cascada como se muestra en el Listado~\ref{lst:cascada} **(utilizar el puntero this)**.
 ```cpp
 Hora h;
 h.establecer(17,30,0).imprimir();
@@ -163,11 +163,11 @@ h.establecerHora(17).establecerMinuto(30).establecerSegundo(0);
         <br>
         P.e.: el complejo $2+3i$ se imprime `(2, 3)`.
         
-[**Código Ej.10 - complejo1.cpp (→)**](EJ_10/)
+[**Código Ej.10 - complejo1.cpp (→)**](EJ_10/src/)
 
 11. Escribir un programa que, utilizando la clase Complejo del ejercicio anterior, defina e inicialice dos números complejos, los sume y reste, y muestre los resultados.
 
-[**Código Ej.11 - main.cpp (→)**](EJ_10/)
+[**Código Ej.11 - main.cpp (→)**](EJ_10/src/)
 
 12. Agregarle a la implementación de la clase Complejo del ejercicio 10 funciones get para obtener la parte real y la parte imaginaria.
 
@@ -269,6 +269,10 @@ int main() {
   return 0;
 }
 ```
+
+**NOTA:** En el proyecto **EJ_18** se encuentran dos archivos cadenas `cadena.h` (se realizo de manera tradicional), y `cadena1.h` (se realizo con la librería `cstring` )
+
+[**Código Ej.18 (→)**](EJ_18/)
 
 19. Escribir una clase Cadena (nombre de archivos cadena2.h y cadena2.cpp) similar a la del ejercicio anterior en la cual la asignación y la impresión por pantalla de la cadena se realice mediante sobrecarga de operadores. A continuación se muestra el código fuente para evaluar la implementación de la clase.
 ```cpp
