@@ -22,7 +22,7 @@ Cadena1::~Cadena1()
 void Cadena1::establecer(const char * texto)
 {
     strncpy(cad, texto, longitud);
-    cad[longitud+1] = '\0';
+    cad[longitud] = '\0';
 }
 
 void Cadena1::imprimir() const 
