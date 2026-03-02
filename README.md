@@ -301,5 +301,5 @@ int main()
 [**Código Ej.19 (→)**](EJ_19/)
 
 20. Ejercicios con Herencia. **Modelo:** Persona <- Alumno.
-  1. **(Ej.20 - A)** Herencia **sin** memoria Dinamica. [**Código Ej.20 - A (→)**](EJ_20_A_Herencia_Sin_Memo/)
-  1. **(Ej.20 - B)** Herencia **con** memoria Dinamica. [**Código Ej.20 - B (→)**](EJ_20_B_Herencia_Memo/)
+    1. **(Ej.20 - A)** Herencia **sin** memoria Dinamica. [**Código Ej.20 - A (→)**](EJ_20_A_Herencia_Sin_Memo/)
+    1. **(Ej.20 - B)** Herencia **con** memoria Dinamica. [**Código Ej.20 - B (→)**](EJ_20_B_Herencia_Memo/)
