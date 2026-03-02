@@ -9,6 +9,6 @@ Persona::Persona(const string& nom, int e)
 
 void Persona::mostrar() const
 {
-    std::cout << "Nombre: " << nombre
-              << " - Edad: " << edad;
+    cout << "Nombre: " << nombre
+         << " - Edad: " << edad;
 }
